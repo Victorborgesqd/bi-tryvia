@@ -425,14 +425,17 @@
 
   <script>
     // URL do dashboard original
+    const dashboardOriginal = 
+    
+    // URLs fictícias para cada dashboard (na implementação real, devem ser substituídas pelos links corretos)
     const dashboardURLs = {
-      passaroverde: dashboardOriginal,
-      passaromarron: dashboardOriginal,
-      emtram: https://bi.newsgps.com.br/bi/dash_Geral_Emtram.html,
-      lideranca: dashboardOriginal,
-      planalto: dashboardOriginal,
-      reunidas: dashboardOriginal,
-      implantacao: dashboardOriginal
+      passaroverde = "https://bi.newsgps.com.br/bi/dash_Geral_Passaro_verde.html",
+      passaromarron = "https://bi.newsgps.com.br/bi/dash_Geral_Passaro_marron.html",
+      emtram = "https://bi.newsgps.com.br/bi/dash_Geral_Emtram.html",
+      lideranca = "https://bi.newsgps.com.br/bi/dash_Geral_Lideranca.html",
+      planalto = "https://bi.newsgps.com.br/bi/dash_Geral_Planalto.html",
+      reunidas = "https://bi.newsgps.com.br/bi/dash_Geral_Reunidas.html",
+      implantacao = "https://app.powerbi.com/view?r=eyJrIjoiZWJmY2EyYjgtYmI0ZS00YzliLWE2MmMtODJhN2IyYjJmNTI5IiwidCI6IjFiNzUzM2EyLWM0MGMtNDA5OS1iNDBjLWU0MzM4OWIxMGU1ZCJ9"
     };
     
     function acessarDashboard(tipo) {
