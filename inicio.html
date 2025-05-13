@@ -302,8 +302,8 @@
     </header>
     
     <section class="welcome-section">
-      <h1>Portal de Business Intelligence</h1>
-      <p>Escolha um dos dashboards abaixo para visualizar dados e insights importantes</p>
+      <h1>Portal de Power BI </h1>
+      <p>Escolha um dos dashboards abaixo para visualizar dados</p>
     </section>
     
     <div class="search-container">
@@ -317,6 +317,8 @@
       <button class="category-btn" onclick="filterCategory('financeiro')">Financeiro</button>
       <button class="category-btn" onclick="filterCategory('marketing')">Marketing</button>
       <button class="category-btn" onclick="filterCategory('operacional')">Operacional</button>
+       <button class="category-btn" onclick="filterCategory('Ticket')">Operacional</button>
+       <button class="category-btn" onclick="filterCategory('Implantação')">Operacional</button>
     </div>
     
     <div class="dashboard-grid" id="dashboardGrid">
@@ -405,6 +407,21 @@
       </div>
     </div>
     
+     <!-- Dashboard 7 -->
+      <div class="dashboard-card" data-category="implantação">
+        <div class="card-image">
+          <img src="/api/placeholder/300/160" alt="Previsão Orçamentária">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">BI time de implantação</h3>
+          <p class="card-description">time de implantação em tempo real.</p>
+          <button class="access-btn" onclick="acessarDashboard('vendas')">
+            <i class="fas fa-calculator"></i> Acessar
+          </button>
+        </div>
+      </div>
+    </div>
+  
     <footer>
       <p>&copy; 2025 Tryvia BI - Todos os direitos reservados</p>
     </footer>
