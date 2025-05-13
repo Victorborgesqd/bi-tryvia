@@ -423,17 +423,62 @@
     </footer>
   </div>
 
-  <script>
-    // URL do dashboard original
-     const dashboardOriginal = {
-      passaroverde = "https://bi.newsgps.com.br/bi/dash_Geral_Passaro_verde.html",
-      passaromarron = "https://bi.newsgps.com.br/bi/dash_Geral_Passaro_marron.html",
-      emtram = "https://bi.newsgps.com.br/bi/dash_Geral_Emtram.html",
-      lideranca = "https://bi.newsgps.com.br/bi/dash_Geral_Lideranca.html",
-      planalto = "https://bi.newsgps.com.br/bi/dash_Geral_Planalto.html",
-      reunidas = "https://bi.newsgps.com.br/bi/dash_Geral_Reunidas.html",
-      implantacao = "https://app.powerbi.com/view?r=eyJrIjoiZWJmY2EyYjgtYmI0ZS00YzliLWE2MmMtODJhN2IyYjJmNTI5IiwidCI6IjFiNzUzM2EyLWM0MGMtNDA5OS1iNDBjLWU0MzM4OWIxMGU1ZCJ9"
-    };
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal de Dashboards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #007acc;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    .dashboard-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .dashboard-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+    .dashboard-card:hover {
+      transform: scale(1.03);
+    }
+    .dashboard-card a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal de Dashboards</h1>
+  </header>
+  <div class="dashboard-container">
+    <div class="dashboard-card"><a href="https://bi.newsgps.com.br/bi/dash_Geral_Passaro_verde.html" target="_blank">Pássaro Verde</a></div>
+    <div class="dashboard-card"><a href="https://bi.newsgps.com.br/bi/dash_Geral_Passaro_marron.html" target="_blank">Pássaro Marron</a></div>
+    <div class="dashboard-card"><a href="https://bi.newsgps.com.br/bi/dash_Geral_Emtram.html" target="_blank">EMTRAM</a></div>
+    <div class="dashboard-card"><a href="https://bi.newsgps.com.br/bi/dash_Geral_Lideranca.html" target="_blank">Liderança</a></div>
+    <div class="dashboard-card"><a href="https://bi.newsgps.com.br/bi/dash_Geral_Planalto.html" target="_blank">Planalto</a></div>
+    <div class="dashboard-card"><a href="https://bi.newsgps.com.br/bi/dash_Geral_Reunidas.html" target="_blank">Reunidas</a></div>
+    <div class="dashboard-card"><a href="https://app.powerbi.com/view?r=eyJrIjoiZWJmY2EyYjgtYmI0ZS00YzliLWE2MmMtODJhN2IyYjJmNTI5IiwidCI6IjFiNzUzM2EyLWM0MGMtNDA5OS1iNDBjLWU0MzM4OWIxMGU1ZCJ9" target="_blank">Implantação</a></div>
     
     function acessarDashboard(tipo) {
       // Redireciona para o dashboard correspondente
