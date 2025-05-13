@@ -66,14 +66,15 @@
   </div>
 
   <script>
-    function verificarSenha() {
-      const senha = document.getElementById("senha").value;
-      if (senha === "1303") {
-        window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiZWJmY2EyYjgtYmI0ZS00YzliLWE2MmMtODJhN2IyYjJmNTI5IiwidCI6IjFiNzUzM2EyLWM0MGMtNDA5OS1iNDBjLWU0MzM4OWIxMGU1ZCJ9";
-      } else {
-        document.getElementById("erro").innerText = "Senha incorreta. Tente novamente.";
-      }
-    }
+function verificarSenha() {
+  const senha = document.getElementById("senha").value;
+  if (senha === "1303") {
+    // Redireciona para a página de painéis
+    window.location.href = "inicio.html";
+  } else {
+    document.getElementById("erro").innerText = "Senha incorreta. Tente novamente.";
+  }
+}
   </script>
 </body>
 </html>
