@@ -476,49 +476,8 @@
 </script>
 
     
-    function acessarDashboard(tipo) {
-      // Redireciona para o dashboard correspondente
-      window.location.href = dashboardURLs[tipo];
-    }
-    
-    function logout() {
-      // Redireciona para a página de login
-      window.location.href = "index.html";
-    }
-    
-    function filterCategory(category) {
-      // Atualiza o botão ativo
-      document.querySelectorAll('.category-btn').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      event.target.classList.add('active');
-      
-      // Filtra os cards
-      const cards = document.querySelectorAll('.dashboard-card');
-      cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-    
-    function filterDashboards() {
-      const searchText = document.getElementById('searchInput').value.toLowerCase();
-      const cards = document.querySelectorAll('.dashboard-card');
-      
-      cards.forEach(card => {
-        const title = card.querySelector('.card-title').textContent.toLowerCase();
-        const description = card.querySelector('.card-description').textContent.toLowerCase();
-        
-        if (title.includes(searchText) || description.includes(searchText)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
+  
+
   </script>
 </body>
 </html>
